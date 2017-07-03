@@ -1,5 +1,5 @@
 /**
- * Q: 執行多點觸控 放大縮小, 操作自己所繪製的圖形時, 有機會出現pointerIndex out of range 異常
+ * Q: 問題描述, 當執行多點觸控 放大縮小, 操作自己所繪製的圖形時, 有機會出現pointerIndex out of range 異常
  * A: 問題出現原因: android.support.v4.view.ViewPager, 本身有Bug
  *    解決方式: 1. 自定義ViewPager, 重寫onTouchEvent() 和onInterceptTouchEvent()
                 2. 然後在xml裡面使用這個自定義的ViewPager, 例如: <com.xxx.xxx.ViewPagerFixed />
